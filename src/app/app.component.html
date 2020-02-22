@@ -1,14 +1,20 @@
-<button [disabled]="buttonStatus">My Button</button>
+<button [disabled]="website.buttonStatus">My Button</button>
 
 <h2> Button Status</h2>
-<h3 [innerText]="buttonStatus"></h3>
+<h3 [innerText]="website.buttonStatus"></h3>
 
 
-<p [textContent]="paragraphContent"> </p>
+<p [textContent]="website.paragraphContent"> </p>
 
 <!-- This wont work, because 'textContent' is an angular property and hence cannot be hardcoded as below -->
 <!--<p [textContent]="hardcoded"> </p>-->
 
 <!-- 'class' is both an angular property as well as a html property so it be used as dynamic property as well as hardcoded -->
-<p [class]="myStyle">Paragraph with class coming from a property</p>
+<p [class]="website.paraStyle">Paragraph with class coming from a property</p>
 <p class="pink">Paragraph with hardcoded class</p>
+
+<!-- 'class' is both an angular property as well as a html property so it be used as dynamic property as well as hardcoded -->
+<img  [src]="website.imageUrl" />
+<img  src="assets/apple1.png" />
+
+

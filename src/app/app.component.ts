@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,14 +8,16 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'property-binding-html-component';
 
-  buttonStatus = false;
-  paragraphContent ="this is paragraph content coming from a property";
-
-  myStyle="red";
+  website = {
+    buttonStatus: false,
+    paragraphContent: "this is paragraph content coming from a property",
+    paraStyle: "red",
+    imageUrl: "assets/target_1.png",
+  }
 
   constructor() {
-    setTimeout(() =>{
-      this.buttonStatus = true;
+    setTimeout(() => {
+      this.website.buttonStatus = true;
     }, 5000);
   }
 }

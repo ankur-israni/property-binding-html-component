@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'property-binding-html-component';
+
+  buttonStatus = false;
+  paragraphContent ="this is paragraph content coming from a property";
+
+  myStyle="red";
+
+  constructor() {
+    setTimeout(() =>{
+      this.buttonStatus = true;
+    }, 5000);
+  }
 }
